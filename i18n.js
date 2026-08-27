@@ -24,17 +24,15 @@
       },
       description: {
         lead: '무너진 도시에서 살림을 꾸리고 아홉 번의 겨울을 보내는 코지 포스트아포칼립스 생활 시뮬레이션입니다.',
-        body: '19곳의 폐허를 돌아다니며 쓸 만한 물자를 챙겨 오고 16곳의 거처 중 마음에 드는 곳을 골라 나만의 집으로 만드세요. 겨울이 깊어질수록 새 길이 열리고 도시가 망한 이유도 드러납니다. 아홉 번째 겨울 끝에는 앞으로 살아갈 곳을 정해야 합니다.'
+        body: '폐허에서 쓸 만한 물건을 챙겨 돌아와 텅 빈 거처를 조금씩 집으로 바꿔 보세요. 끼니를 마련하고 난로를 돌보는 사이 계절은 흐르고 닫혀 있던 길과 도시가 무너진 이유도 조금씩 드러납니다. 아홉 번째 겨울이 끝날 무렵에는 앞으로 어디서 어떻게 살아갈지 선택해야 합니다.'
       },
       features: [
-        ['1. 끝이 있는 코지', '이야기는 아홉 번의 겨울 동안 이어집니다. 해마다 추위와 도시의 모습이 달라지고 아홉 번째 겨울에 내린 선택에 따라 결말이 바뀝니다.'],
-        ['2. 16곳의 거처', '옥탑, 벙커, 버스, 지하철 승강장, 등대와 선박도 집이 됩니다. 마음에 드는 거처를 골라 금 간 곳을 막고 난방과 가구를 들이세요. 차갑고 텅 빈 공간이 조금씩 집처럼 변합니다.'],
-        ['3. 살아 있는 날씨', '36곡의 음악이 날씨와 계절, 시간을 따라 흐릅니다. 비가 오면 벽이 젖고 겨울이 오면 창에 서리가 낍니다. 사계절이 돌 때마다 거처 안팎의 풍경이 바뀝니다.'],
-        ['4. 돌아오면 살림 돌보기', '끼니와 차를 준비하고 작물을 돌보세요. 천을 꿰매 이불을 만들고 망가진 물건도 손봅니다. 길고양이가 찾아오면 먹이를 주고 함께 지낼 수 있습니다.'],
-        ['5. 라디오에 남은 도시의 기록', '주파수를 맞추면 방송과 끊긴 교신, 오래된 녹음이 들려옵니다. 더 먼 곳까지 나갈수록 도시가 왜 망했는지 조금씩 알게 됩니다.'],
-        ['6. 19곳을 직접 탐험하기', '위험과 필요한 도구를 살핀 뒤 폐허로 직접 나서세요. 눈이 길을 막으면 물자와 기력을 써 길을 내거나 먼 길을 돌아가야 합니다.'],
-        ['7. 내 속도로 보내는 겨울', '코지, 생존, 혹한 가운데 원하는 난이도를 고르세요. 선택에 따라 추위와 자원 압박이 달라집니다. 무한 모드에서는 살림을 계속 이어 가고 배경화면 모드에서는 자원 걱정 없이 거처를 꾸밉니다.'],
-        ['8. 바탕화면에 켜 두기', '자동 진행을 켜 두고 하루가 흐르는 모습을 지켜보세요. 완성한 거처를 데스크톱 위젯으로 띄워 둘 수도 있습니다.']
+        ['1. 아홉 번의 겨울을 건너는 이야기', '겨울은 해마다 더 깊어지고 도시도 조금씩 달라집니다. 라디오에서 흘러나오는 방송과 오래된 녹음을 따라가다 보면 폐허가 된 이유와 마지막 선택에 가까워집니다.'],
+        ['2. 빈 거처를 내 집으로', '16곳의 거처 가운데 마음에 드는 곳을 골라 정착하세요. 금 간 곳을 고치고 난방과 가구를 들이면 차갑던 공간에 생활의 흔적이 쌓입니다.'],
+        ['3. 밖으로 나서는 날', '어디로 갈지, 무엇을 챙길지 정한 뒤 19곳의 폐허를 직접 탐험합니다. 눈이 길을 막으면 길을 내거나 돌아가야 하고 가져온 물자는 다음 끼니와 집수리에 쓰입니다.'],
+        ['4. 계절이 머무는 집', '비가 오면 벽이 젖고 겨울이 오면 창에 서리가 낍니다. 36곡의 음악도 날씨와 시간에 맞춰 바뀌며 계절마다 달라지는 거처의 분위기를 채웁니다.'],
+        ['5. 돌아온 뒤의 하루', '탐험에서 돌아오면 집 안의 시간이 시작됩니다. 끼니를 마련하고 작물을 돌보며 찾아온 길고양이와 함께 텅 빈 방을 사람 사는 집으로 채워 가세요.'],
+        ['6. 내 속도로 오래 머물기', '부담을 덜고 싶을 때는 코지를, 추위를 견디는 맛을 원할 때는 생존이나 혹한을 고르세요. 무한 모드로 살림을 이어 가거나 배경화면 모드와 데스크톱 위젯으로 완성한 거처를 곁에 둘 수도 있습니다.']
       ],
       trailer: { placeholder: '트레일러 삽입 영역', note: '트레일러 공개 URL이 확정되면 이 자리에 연결합니다.' },
       screenshots: {
@@ -94,17 +92,15 @@
       },
       description: {
         lead: 'Build a life in a ruined city and see nine winters through. A cozy post-apocalyptic life sim.',
-        body: 'Search 19 ruined districts for anything useful, then settle into one of 16 shelters and make it your own. Each winter grows colder, opening new routes and revealing more of what happened to the city. At the end of the ninth winter, decide where and how to live.'
+        body: 'Bring something useful home from the ruins and turn an empty shelter into a place of your own. As you cook, repair, and keep the stove lit, the seasons pass, sealed roads reopen, and the story of the fallen city comes into view. At the end of the ninth winter, decide where and how you want to live.'
       },
       features: [
-        ['1. A Cozy Game with an Ending', 'The story runs through nine winters. Each year changes the cold and the city, and your choice in the ninth winter determines the ending.'],
-        ['2. Sixteen Shelters', 'Choose from a rooftop room, a bunker, a bus, a subway platform, a lighthouse, a ship, and more. Patch the cracks, restore the heat, and furnish an empty space until it feels like home.'],
-        ['3. Living Weather', 'Thirty-six tracks follow the weather, the season, and the time of day. Rain wets the walls. Winter frosts the windows. The world inside and outside the shelter shifts with every turn of the seasons.'],
-        ['4. Tend to Things at Home', 'Make meals and tea, tend crops, sew a quilt, and repair worn-out belongings. If a stray cat finds your door, feed it and let it stay.'],
-        ['5. Records Left on the Radio', 'Tune in to broadcasts, broken calls, and old recordings. The farther you travel, the more you learn about why the city fell.'],
-        ['6. Explore Nineteen Areas', 'Weigh the risk, choose your tools, and make each trip yourself. When snow blocks a road, spend supplies and Energy to clear it or take the long way around.'],
-        ['7. Play at Your Own Pace', 'Cozy, Survival, and Deep Freeze adjust the pressure from cold and scarce supplies. Endless Mode keeps the household going, while Wallpaper Mode removes resource worries.'],
-        ['8. Keep It on Your Desktop', 'Turn on Auto Progress and watch the days pass, or keep a finished shelter on your desktop as a widget.']
+        ['1. Nine Winters, One Story', 'Each winter grows colder, and the city changes with it. Follow broadcasts and old recordings across the radio to uncover what happened and draw closer to the choice waiting in the ninth winter.'],
+        ['2. Make an Empty Shelter Home', 'Choose one of 16 shelters and settle where it feels right. Repair the cracks, restore the heat, and bring in furniture until a cold room begins to feel lived in.'],
+        ['3. Days Spent Beyond the Door', 'Choose where to go and what to carry, then explore 19 ruined districts yourself. Snow may close a road, and everything you bring home feeds the next meal or repair.'],
+        ['4. A Home That Follows the Seasons', 'Rain dampens the walls and winter frosts the windows. Thirty-six tracks move with the weather and time of day, giving every shelter a different rhythm as the seasons turn.'],
+        ['5. Life After the Expedition', 'Coming home begins another part of the day. Make a meal, tend the crops, and share the room with a stray cat until the shelter feels like a home.'],
+        ['6. Stay at Your Own Pace', 'Choose Cozy for a gentler life, or Survival and Deep Freeze when you want the cold to matter. Endless Mode keeps the household going, while Wallpaper Mode and the desktop widget keep a finished shelter close.']
       ],
       trailer: { placeholder: 'TRAILER EMBED', note: 'The trailer will be embedded here once the public URL is ready.' },
       screenshots: {
@@ -164,17 +160,15 @@
       },
       description: {
         lead: '崩壊した都市に自分の居場所を作り、九度の冬を越えていくコージー・ポストアポカリプス生活シミュレーションです。',
-        body: '19か所の廃墟を巡って使えそうな物資を持ち帰り、16か所の住居から気に入った場所を選んで自分の家にしていきます。冬が深まるにつれて新たな道が開き、都市が崩壊した理由も見えてきます。九度目の冬の終わりには、これからどこで、どう生きるかを決めます。'
+        body: '廃墟で見つけた物資を持ち帰り、何もない住居を少しずつ自分の家に変えていきます。食事を作り、ストーブの火を守るうちに季節が巡り、閉ざされていた道と都市が崩壊した理由が少しずつ見えてきます。九度目の冬の終わりには、これからどこでどう生きるかを選びます。'
       },
       features: [
-        ['1. 終わりのあるコージーゲーム', '物語は九度の冬を通して進みます。年ごとに寒さと都市の姿が変わり、九度目の冬に下す選択によって結末が変化します。'],
-        ['2. 16か所の住居', '屋上部屋、バンカー、バス、地下鉄のホーム、灯台、船などから住む場所を選べます。ひびを塞ぎ、暖房と家具を整えれば、冷たく空っぽだった空間が少しずつ家に変わります。'],
-        ['3. 生きている天候', '36曲の音楽が天候、季節、時間帯に合わせて流れます。雨が壁を濡らし、冬には窓に霜がつきます。季節が巡るたびに住居の内外の景色が変わります。'],
-        ['4. 帰宅したら暮らしを整える', '食事やお茶を用意し、作物を育てます。布を縫って布団を作り、壊れた物も直します。野良猫が訪ねてきたら、餌をあげて一緒に暮らせます。'],
-        ['5. ラジオに残された都市の記録', '周波数を合わせると、放送や途切れた通信、古い録音が聞こえます。遠くまで探索するほど、都市が滅びた理由が少しずつ明らかになります。'],
-        ['6. 19か所を自分の足で探索', '危険度と必要な道具を確かめてから廃墟へ向かいます。雪で道が塞がれたら、物資と体力を使って道を開くか、遠回りしなければなりません。'],
-        ['7. 自分に合ったペース', 'コージー、サバイバル、極寒で、寒さと資源不足の厳しさを調整できます。エンドレスモードでは暮らしを続け、壁紙モードでは資源を気にせず住居を飾れます。'],
-        ['8. デスクトップで眺める', '自動進行をオンにして日々の流れを見守ったり、完成した住居をデスクトップウィジェットとして表示したりできます。']
+        ['1. 九度の冬をめぐる物語', '冬は年を追うごとに厳しくなり、都市の姿も少しずつ変わります。ラジオから流れる放送や古い録音をたどりながら、崩壊の理由と九度目の冬に待つ選択へ近づいていきます。'],
+        ['2. 空き家を自分の家に', '16か所の住居から気に入った場所を選び、そこに暮らし始めます。ひびを塞ぎ、暖房と家具を整えるうちに、冷たかった空間へ暮らしの跡が積み重なっていきます。'],
+        ['3. 外へ出る日', '行き先と持ち物を決め、19か所の廃墟を自分の足で探索します。雪に道を塞がれれば切り開くか遠回りし、持ち帰った物資を次の食事や修理に使います。'],
+        ['4. 季節が宿る家', '雨が壁を濡らし、冬には窓に霜がつきます。天候と時間帯に寄り添う36曲の音楽が、季節ごとに変わる住居の内外を彩ります。'],
+        ['5. 探索から帰った後の暮らし', '帰宅すると、家の中で過ごす時間が始まります。食事を作り、作物を育て、訪ねてきた野良猫と暮らすうちに、何もなかった部屋が家になっていきます。'],
+        ['6. 自分のペースで暮らす', '穏やかに過ごしたいならコージー、寒さを実感したいならサバイバルや極寒を選べます。エンドレスモードで暮らしを続けたり、壁紙モードやデスクトップウィジェットで完成した住居をそばに置いたりできます。']
       ],
       trailer: { placeholder: 'トレーラー埋め込みエリア', note: '公開URLが決まり次第、こちらにトレーラーを掲載します。' },
       screenshots: {
