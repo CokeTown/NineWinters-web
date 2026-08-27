@@ -9,7 +9,11 @@
 <meta property="og:description" content="무너진 도시에서 살림을 꾸리고 아홉 번의 겨울을 보내는 코지 포스트아포칼립스 생활 시뮬레이션.">
 <meta property="og:image" content="assets/brand/main_capsule_1232x706.png">
 <meta property="og:type" content="website">
-<link rel="preload" href="assets/fonts/DungGeunMo.woff" as="font" type="font/woff" crossorigin>
+<!-- 배너 히어로가 이 페이지의 LCP 다. CSS background-image 는 preload 스캐너가 못 보고
+     스타일 계산이 끝나야 요청되므로 여기서 미리 건다. 둥근모는 인라인 CSS 의 @font-face 라
+     이미 첫 청크에서 발견되고 font-display:swap 이라, 1.6MB 짜리 둘을 동시에 최우선으로
+     걸면 서로 대역폭만 뺏는다 — preload 는 히어로 한 장만 갖는다. -->
+<link rel="preload" href="assets/brand/library_hero_3840x1240.png" as="image" fetchpriority="high">
 <style>
   /* ── Nine Winters 프레스킷 표면 = 게임 자신의 단말 문법 ─────────────────────────
      토큰·버튼·패널·스크롤바의 정본은 게임 src/style.css 의 :root / button.pixel-btn /
@@ -77,14 +81,32 @@
   ::-webkit-scrollbar-thumb:hover { background:#57895f; }
   ::-webkit-scrollbar-corner { background:rgba(8,12,9,.9); }
 
+  /* ── 상단 배너 = 라이브러리 히어로 ───────────────────────────────────────
+     3840×1240(3.10:1)이라 배너 프레임보다 납작하다 — min-height 로 배너 높이를 세우고
+     cover 로 채운다. 좁은 화면일수록 가로 크롭이 커지므로 background-position 의 X 가
+     불 켜진 옥탑(원본 가로 약 47%)을 물고 있어야 한다.
+     스크림은 두 겹이다: 가로 겹은 좌측(텍스트 열)을 눌러 글자를 살리고 우측 야경은 열어 두며,
+     세로 겹은 위·아래 경계를 눌러 마지막 정지(불투명 --bg)로 본문 바탕에 이음매 없이 잦아든다.
+     줄무늬·스캔라인은 없다.
+     구도: 텍스트는 좌측 열, 불 켜진 옥탑(원본 47% 지점)은 중앙~우측에 비워 둔다 —
+     Steam 라이브러리 히어로의 로고-좌측 관례와 같다. 텍스트 열 폭(460px)이 옥탑을 안 덮는 상한이다. */
   header {
-    border-bottom:1px solid var(--panel-border); padding:64px 24px 48px; text-align:center;
-    background:radial-gradient(120% 100% at 50% 0%, #0a1a0f 0%, var(--bg) 70%);
+    position:relative; min-height:460px;
+    display:flex; flex-direction:column; justify-content:center;
+    border-bottom:1px solid var(--panel-border);
+    padding:64px clamp(24px, 6vw, 96px) 56px; text-align:left;
+    background-image:
+      linear-gradient(90deg, rgba(5,8,7,.88) 0%, rgba(5,8,7,.60) 32%, rgba(5,8,7,.16) 58%, rgba(5,8,7,.30) 100%),
+      linear-gradient(180deg, rgba(5,8,7,.52) 0%, rgba(5,8,7,.10) 38%, rgba(5,8,7,.34) 78%, var(--bg) 100%),
+      url(assets/brand/library_hero_3840x1240.png);
+    background-size:cover, cover, cover;
+    background-position:center, center, 47% 45%;
+    background-repeat:no-repeat, no-repeat, no-repeat;
   }
   /* 이 페이지의 유일한 활성 글로우다. 다른 곳에 글로우를 더하지 마라. */
   .wordmark { font-size:44px; letter-spacing:14px; color:var(--accent); text-shadow:var(--bloom); font-weight:bold; }
-  .tagline { margin-top:16px; color:var(--text-dim); max-width:640px; margin-left:auto; margin-right:auto; }
-  .cta { margin-top:24px; display:flex; gap:12px; justify-content:center; flex-wrap:wrap; }
+  .tagline { margin-top:16px; color:var(--text-dim); max-width:460px; }
+  .cta { margin-top:24px; display:flex; gap:12px; justify-content:flex-start; flex-wrap:wrap; }
 
   /* 버튼 = 게임 button.pixel-btn 문법 그대로. primary 는 테두리만 포스퍼로 올린다(발광 금지). */
   .btn, .language-trigger, .language-close, .language-option {
@@ -100,23 +122,6 @@
   .btn.primary { border-color:var(--lcd-ink); }
   .cta-note { margin-top:12px; font-size:11px; letter-spacing:1px; color:var(--text-dim); }
 
-  /* ── 히어로 전시 ──────────────────────────────────────────────────────────
-     패널 문법 그대로: 각짐 · 내부 1px --panel-border · 외곽 2px --panel-edge · 드롭 1규칙.
-     비율은 캡슐(1232×706)에 맞추고 스크린샷(16:9)은 cover 로 받는다 — 차이 2% 라 잘림이 안 읽힌다.
-     새 글로우는 없다(글로우 1규칙은 워드마크가 갖는다). */
-  .hero { max-width:720px; margin:32px auto 0; }
-  .hero-frame { position:relative; aspect-ratio:1232/706; overflow:hidden;
-    border:1px solid var(--panel-border); background:var(--panel-edge);
-    box-shadow:0 0 0 2px var(--panel-edge), var(--drop); }
-  .hero-slide { position:absolute; inset:0; width:100%; height:100%; object-fit:cover;
-    opacity:0; transition:opacity .7s ease; }
-  .hero-slide.is-on { opacity:1; }
-  .hero-dots { display:flex; gap:4px; justify-content:center; margin-top:12px; }
-  /* 8px 정사각이 보이는 크기, 히트 영역은 20px — 각진 인디케이터라 라운드 0 을 지킨다. */
-  .hero-dot { width:20px; height:20px; padding:6px; border:0; background:transparent; cursor:pointer; }
-  .hero-dot::after { content:''; display:block; width:8px; height:8px; background:var(--lcd-dim); }
-  .hero-dot.is-on::after, .hero-dot:hover::after, .hero-dot:focus-visible::after { background:var(--lcd-ink); }
-  .hero-dot:focus-visible { outline:1px solid var(--panel-border); }
 
   .language-trigger { position:absolute; top:16px; right:24px; padding:8px 12px;
     font-size:12px; letter-spacing:1px; color:var(--accent); z-index:5; }
@@ -221,23 +226,28 @@
   .js-reveal { opacity:0; transform:translateY(10px); transition:opacity .45s ease, transform .45s ease; }
   .js-reveal.is-in { opacity:1; transform:none; }
 
-  /* 동작 최소화: 슬라이드쇼는 첫 장 고정(전환 없음), 리빌은 즉시 표시.
-     JS 쪽에서도 같은 질의로 타이머와 클래스 부착을 통째로 막는다 — 두 겹이다. */
+  /* 동작 최소화: 리빌은 즉시 표시. JS 쪽에서도 같은 질의로 클래스 부착을 막는다 — 두 겹이다. */
   @media (prefers-reduced-motion: reduce) {
-    .hero-slide { transition:none; }
     .js-reveal, .js-reveal.is-in { opacity:1; transform:none; transition:none; }
   }
 
   @media (max-width: 760px) {
     .wrap { flex-direction:column; gap:28px; }
     aside { position:static; width:100%; flex:none; }
-    .wordmark { font-size:30px; letter-spacing:8px; }
     table.facts th { width:auto; }
-    header { padding-top:78px; }
     .language-trigger { top:12px; right:12px; }
     .language-backdrop { padding:12px; }
     .language-options { grid-template-columns:1fr; }
-    .hero { margin-top:24px; }
+    /* 배너(모바일): 좁은 화면에선 좌우 열 구도가 안 서므로 중앙 정렬로 되돌리고,
+       야경은 텍스트 뒤 배경으로 눕힌다. 가로 스크림도 세로 균일값으로 갈아 좌측만 어두워지는 것을 막는다. */
+    header { min-height:340px; padding:78px 20px 40px; text-align:center;
+      background-image:
+        linear-gradient(180deg, rgba(5,8,7,.66) 0%, rgba(5,8,7,.44) 40%, rgba(5,8,7,.60) 78%, var(--bg) 100%),
+        url(assets/brand/library_hero_3840x1240.png);
+      background-size:cover, cover; background-position:center, 47% 42%; }
+    .tagline { margin-left:auto; margin-right:auto; }
+    .cta { justify-content:center; }
+    .wordmark { font-size:30px; letter-spacing:8px; }
   }
 </style>
 
@@ -251,28 +261,6 @@
     <a class="btn" id="ctaAssets" href="#screenshots">보도 자산</a>
   </div>
   <div class="cta-note">Steam 페이지는 2026년 10월 Steam Next Fest에 맞춰 공개됩니다.</div>
-
-  <!-- 히어로 전시. 전용 .hero-* 클래스만 쓴다 — figure.tile·.brand-tile 을 쓰면
-       i18n.js 의 타일 순회 바인딩(#screenshots·#gifs·#brand)과 이름이 겹친다.
-       첫 장은 정적으로 is-on 이라 JS 가 안 돌아도 캡슐 한 장은 보인다. -->
-  <div class="hero">
-    <div class="hero-frame">
-      <img class="hero-slide is-on" src="assets/brand/main_capsule_1232x706.png" width="1232" height="706"
-           loading="eager" fetchpriority="high" decoding="async" alt="Nine Winters 메인 캡슐 이미지.">
-      <img class="hero-slide" src="assets/screenshots/01_home-container.png" width="1920" height="1080"
-           loading="lazy" fetchpriority="low" decoding="async" alt="컨테이너 셸터와 게임 HUD.">
-      <img class="hero-slide" src="assets/screenshots/07_stage-fishmarket.png" width="1920" height="1080"
-           loading="lazy" fetchpriority="low" decoding="async" alt="겨울 어시장을 수색하는 탐험 무대.">
-      <img class="hero-slide" src="assets/screenshots/08_map.png" width="1920" height="1080"
-           loading="lazy" fetchpriority="low" decoding="async" alt="관측 단말에 표시된 얼어붙은 도시 지도.">
-    </div>
-    <div class="hero-dots" role="tablist" aria-label="히어로 이미지">
-      <button class="hero-dot is-on" type="button" role="tab" aria-selected="true" aria-label="메인 캡슐"></button>
-      <button class="hero-dot" type="button" role="tab" aria-selected="false" aria-label="컨테이너 셸터"></button>
-      <button class="hero-dot" type="button" role="tab" aria-selected="false" aria-label="탐험 — 어시장"></button>
-      <button class="hero-dot" type="button" role="tab" aria-selected="false" aria-label="도시 관측 지도"></button>
-    </div>
-  </div>
 </header>
 
 <div class="language-backdrop" id="languageModal" hidden>
@@ -630,49 +618,14 @@
 <footer>NINE WINTERS © 2026 KKIRRI Studio · ninewinters1212@gmail.com</footer>
 <script src="i18n.js"></script>
 <script>
-/* 히어로 슬라이드쇼 + 스크롤 리빌. i18n.js 는 건드리지 않는다.
-   두 기능 다 JS 가 안 돌면 콘텐츠가 그냥 보이는 쪽으로 실패한다 —
+/* 스크롤 리빌. i18n.js 는 건드리지 않는다.
+   JS 가 안 돌면 콘텐츠가 그냥 보이는 쪽으로 실패한다 —
    숨기는 클래스를 CSS 가 아니라 여기서 붙이는 이유다. */
 (function () {
   'use strict';
   var reduce = !!(window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches);
   var list = function (sel) { return Array.prototype.slice.call(document.querySelectorAll(sel)); };
 
-  /* ── 히어로 슬라이드쇼 ── */
-  var slides = list('.hero-slide');
-  var dots = list('.hero-dot');
-  var at = 0;
-  var timer = null;
-
-  function show(i) {
-    at = (i + slides.length) % slides.length;
-    slides.forEach(function (s, n) { s.classList.toggle('is-on', n === at); });
-    dots.forEach(function (d, n) {
-      d.classList.toggle('is-on', n === at);
-      d.setAttribute('aria-selected', n === at ? 'true' : 'false');
-    });
-  }
-  function stop() { if (timer) { clearInterval(timer); timer = null; } }
-  /* reduce 면 타이머를 아예 안 건다 = 첫 장 고정. CSS 의 transition:none 과 두 겹. */
-  function start() {
-    if (reduce || slides.length < 2) return;
-    stop();
-    timer = setInterval(function () { show(at + 1); }, 5600);
-  }
-
-  if (slides.length) {
-    show(0);
-    dots.forEach(function (d, n) {
-      d.addEventListener('click', function () { show(n); start(); });
-    });
-    /* 숨은 탭에서 도는 타이머는 낭비다 — 돌아오면 다시 건다(reduce 면 start 가 즉시 반환). */
-    document.addEventListener('visibilitychange', function () {
-      if (document.hidden) { stop(); } else { start(); }
-    });
-    start();
-  }
-
-  /* ── 스크롤 리빌 ── */
   var sections = list('main section');
   if (!reduce && 'IntersectionObserver' in window && sections.length) {
     sections.forEach(function (s) { s.classList.add('js-reveal'); });
