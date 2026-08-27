@@ -13,7 +13,7 @@
       language: { button: '언어 · 한국어', title: '언어 선택', help: '프레스킷 전체에 사용할 언어를 선택하세요.', close: '닫기' },
       header: {
         tagline: '무너진 도시에서 살림을 꾸리고 아홉 번의 겨울을 보내는 코지 포스트아포칼립스 생활 시뮬레이션.',
-        steam: 'Steam 페이지', assets: '보도 자산',
+        steamApp: 'Steam에서 바로 열기', steam: 'Steam 페이지', assets: '보도 자산',
         note: 'Steam 페이지는 2026년 10월 Steam Next Fest에 맞춰 공개됩니다.'
       },
       sections: { description: '소개', features: '특징', trailer: '트레일러', screenshots: '스크린샷', gifs: 'GIF', brand: '로고 · 브랜딩', facts: '팩트시트', history: '개발 이야기', faq: 'FAQ', contact: '연락처' },
@@ -58,9 +58,9 @@
         note: '1280×720 · 15fps · 6초 반복 · 실제 게임 렌더러에서 캡처했습니다. 누르면 원본이 열립니다.'
       },
       brand: {
-        labels: ['워드마크', '로고', '엠블럼', '메인 캡슐', '헤더 캡슐', '라이브러리 캡슐'],
-        alts: ['배경이 투명한 Nine Winters 워드마크.', '배경이 투명한 Nine Winters 로고.', '배경이 투명한 Nine Winters 엠블럼.', 'Nine Winters 메인 캡슐 이미지.', 'Nine Winters 헤더 캡슐 이미지.', 'Nine Winters 세로형 라이브러리 캡슐 이미지.'],
-        note: '워드마크와 로고는 어두운 배경 위에 놓아 주시고 색상이나 비율은 바꾸지 말아 주세요.'
+        labels: ['로고', '메인 캡슐', '헤더 캡슐', '라이브러리 캡슐'],
+        alts: ['배경이 투명한 Nine Winters 로고.', 'Nine Winters 메인 캡슐 이미지.', 'Nine Winters 헤더 캡슐 이미지.', 'Nine Winters 세로형 라이브러리 캡슐 이미지.'],
+        note: '로고는 어두운 배경 위에 놓아 주시고 색상이나 비율은 바꾸지 말아 주세요.'
       },
       history: [
         'Nine Winters는 KKIRRI Studio가 만드는 1인 개발 게임이다. 게임의 기획과 방향, 최종 검수는 개발자가 직접 맡는다. AI는 일부 모델링 작업을 보조하고 코딩, 기계 번역, 노래 제작에 활용한다.',
@@ -85,7 +85,7 @@
       language: { button: 'LANGUAGE · ENGLISH', title: 'CHOOSE LANGUAGE', help: 'Choose the language used throughout this press kit.', close: 'Close' },
       header: {
         tagline: 'Build a life in a ruined city and see nine winters through. A cozy post-apocalyptic life sim.',
-        steam: 'Steam Page', assets: 'Press Assets',
+        steamApp: 'Open in Steam', steam: 'Steam Page', assets: 'Press Assets',
         note: 'The Steam page will go live for Steam Next Fest in October 2026.'
       },
       sections: { description: 'DESCRIPTION', features: 'FEATURES', trailer: 'TRAILER', screenshots: 'SCREENSHOTS', gifs: 'GIFS', brand: 'LOGOS & BRANDING', facts: 'FACTSHEET', history: 'DEVELOPMENT', faq: 'FAQ', contact: 'CONTACT' },
@@ -130,9 +130,9 @@
         note: '1280×720 · 15 fps · 6-second loop · Captured in the live game renderer. Select an image to open the original.'
       },
       brand: {
-        labels: ['Wordmark', 'Logo', 'Emblem', 'Main Capsule', 'Header Capsule', 'Library Capsule'],
-        alts: ['Nine Winters wordmark on a transparent background.', 'Nine Winters logo on a transparent background.', 'Nine Winters emblem on a transparent background.', 'Nine Winters main capsule image.', 'Nine Winters header capsule image.', 'Nine Winters vertical library capsule image.'],
-        note: 'Place the wordmark and logo on a dark background. Do not change their colors or proportions.'
+        labels: ['Logo', 'Main Capsule', 'Header Capsule', 'Library Capsule'],
+        alts: ['Nine Winters logo on a transparent background.', 'Nine Winters main capsule image.', 'Nine Winters header capsule image.', 'Nine Winters vertical library capsule image.'],
+        note: 'Place the logo on a dark background. Do not change its colors or proportions.'
       },
       history: [
         'Nine Winters is a solo-developed game by KKIRRI Studio. The developer is responsible for the game’s design, direction, and final review. AI is used in a limited supporting role for some modeling work, coding, machine translation, and song production.',
@@ -157,7 +157,7 @@
       language: { button: '言語 · 日本語', title: '言語を選択', help: 'プレスキット全体で使用する言語を選んでください。', close: '閉じる' },
       header: {
         tagline: '崩壊した都市で暮らしを整え、九度の冬を越すコージー・ポストアポカリプス生活シミュレーション。',
-        steam: 'Steamページ', assets: 'プレス素材',
+        steamApp: 'Steamで開く', steam: 'Steamページ', assets: 'プレス素材',
         note: 'Steamページは2026年10月のSteam Next Festに合わせて公開予定です。'
       },
       sections: { description: 'ゲーム紹介', features: '特徴', trailer: 'トレーラー', screenshots: 'スクリーンショット', gifs: 'GIF', brand: 'ロゴ・ブランド素材', facts: '基本情報', history: '開発について', faq: 'FAQ', contact: 'お問い合わせ' },
@@ -202,9 +202,9 @@
         note: '1280×720 · 15fps · 6秒ループ · 実際のゲームレンダラーで撮影。選択すると原寸データが開きます。'
       },
       brand: {
-        labels: ['ワードマーク', 'ロゴ', 'エンブレム', 'メインカプセル', 'ヘッダーカプセル', 'ライブラリカプセル'],
-        alts: ['背景が透明なNine Wintersのワードマーク。', '背景が透明なNine Wintersのロゴ。', '背景が透明なNine Wintersのエンブレム。', 'Nine Wintersのメインカプセル画像。', 'Nine Wintersのヘッダーカプセル画像。', 'Nine Wintersの縦型ライブラリカプセル画像。'],
-        note: 'ワードマークとロゴは暗い背景の上に配置し、色や縦横比を変更しないでください。'
+        labels: ['ロゴ', 'メインカプセル', 'ヘッダーカプセル', 'ライブラリカプセル'],
+        alts: ['背景が透明なNine Wintersのロゴ。', 'Nine Wintersのメインカプセル画像。', 'Nine Wintersのヘッダーカプセル画像。', 'Nine Wintersの縦型ライブラリカプセル画像。'],
+        note: 'ロゴは暗い背景の上に配置し、色や縦横比を変更しないでください。'
       },
       history: [
         'Nine Wintersは、KKIRRI Studioが個人で開発しているゲームです。企画、方向性、最終確認は開発者本人が担当します。AIは一部のモデリング補助、コーディング、機械翻訳、楽曲制作に限定して使用しています。',
@@ -284,8 +284,11 @@
     $$('.language-option').forEach((option) => option.setAttribute('aria-pressed', String(option.dataset.language === lang)));
 
     setText('.tagline', copy.header.tagline);
-    setText('.cta .primary', copy.header.steam);
-    setText('.cta .btn:not(.primary)', copy.header.assets);
+    // CTA 3버튼은 id 로 명시 바인딩한다. 클래스 선택자(.btn:not(.primary))는 비primary 버튼이
+    // 둘 이상이면 setText 의 querySelector 가 첫 하나만 잡아 라벨이 한 칸씩 밀린다.
+    setText('#ctaSteamApp', copy.header.steamApp);
+    setText('#ctaSteamWeb', copy.header.steam);
+    setText('#ctaAssets', copy.header.assets);
     setText('.cta-note', copy.header.note);
 
     setAsideFacts(copy.facts);
