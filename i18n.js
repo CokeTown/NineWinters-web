@@ -13,16 +13,14 @@
       language: { button: '언어 · 한국어', title: '언어 선택', help: '프레스킷 전체에 사용할 언어를 선택하세요.', close: '닫기' },
       header: {
         tagline: '무너진 도시에서 살림을 꾸리고 아홉 번의 겨울을 보내는 코지 포스트아포칼립스 생활 시뮬레이션.',
-        steamApp: 'Steam에서 바로 열기', steam: 'Steam 페이지', assets: '보도 자산',
-        note: 'Steam 페이지는 2026년 10월 Steam Next Fest에 맞춰 공개됩니다.'
+        steamApp: 'Steam에서 바로 열기', steam: 'Steam 페이지', assets: '보도 자산'
       },
       sections: { description: '소개', features: '특징', trailer: '트레일러', screenshots: '스크린샷', gifs: 'GIF', brand: '로고 · 브랜딩', facts: '팩트시트', history: '개발 이야기', faq: 'FAQ', contact: '연락처' },
       nav: ['소개', '특징', '트레일러', '스크린샷', 'GIF', '로고 · 브랜딩', '팩트시트', '개발 이야기', 'FAQ', '연락처'],
       facts: {
         heading: 'FACTSHEET', contents: 'CONTENTS',
         labels: ['게임명', '개발', '장르', '플랫폼', '가격', '출시', '데모', 'Steam 페이지', '지원 언어', '난이도', '보도 연락처'],
-        values: ['Nine Winters', 'KKIRRI Studio (1인 개발)', '코지 포스트아포칼립스 생활 시뮬레이션', 'Windows (Steam)', '$11.99', '2026년 12월', '2026년 10월 Steam Next Fest', '', '한국어, English, 日本語 (인터페이스 + 자막, 추가 언어 지원 예정)', '코지 / 생존 / 혹한 (3단계) + 무한 / 배경화면 모드', ''],
-        steamNote: '(2026년 10월 Steam Next Fest 공개 예정)'
+        values: ['Nine Winters', 'KKIRRI Studio (1인 개발)', '코지 포스트아포칼립스 생활 시뮬레이션', 'Windows (Steam)', '$11.99', '2026년 12월', '2026년 10월 Steam Next Fest', '', '한국어, English, 日本語 (인터페이스 + 자막, 추가 언어 지원 예정)', '코지 / 생존 / 혹한 (3단계) + 무한 / 배경화면 모드', '']
       },
       description: {
         lead: '무너진 도시에서 살림을 꾸리고 아홉 번의 겨울을 보내는 코지 포스트아포칼립스 생활 시뮬레이션입니다.',
@@ -85,16 +83,14 @@
       language: { button: 'LANGUAGE · ENGLISH', title: 'CHOOSE LANGUAGE', help: 'Choose the language used throughout this press kit.', close: 'Close' },
       header: {
         tagline: 'Build a life in a ruined city and see nine winters through. A cozy post-apocalyptic life sim.',
-        steamApp: 'Open in Steam', steam: 'Steam Page', assets: 'Press Assets',
-        note: 'The Steam page will go live for Steam Next Fest in October 2026.'
+        steamApp: 'Open in Steam', steam: 'Steam Page', assets: 'Press Assets'
       },
       sections: { description: 'DESCRIPTION', features: 'FEATURES', trailer: 'TRAILER', screenshots: 'SCREENSHOTS', gifs: 'GIFS', brand: 'LOGOS & BRANDING', facts: 'FACTSHEET', history: 'DEVELOPMENT', faq: 'FAQ', contact: 'CONTACT' },
       nav: ['Description', 'Features', 'Trailer', 'Screenshots', 'GIFs', 'Logos & Branding', 'Factsheet', 'Development', 'FAQ', 'Contact'],
       facts: {
         heading: 'FACTSHEET', contents: 'CONTENTS',
         labels: ['Title', 'Developer', 'Genre', 'Platform', 'Price', 'Release', 'Demo', 'Steam Page', 'Languages', 'Difficulty', 'Press Contact'],
-        values: ['Nine Winters', 'KKIRRI Studio (solo developer)', 'Cozy Post-Apocalyptic Life Sim', 'Windows (Steam)', '$11.99', 'December 2026', 'Steam Next Fest, October 2026', '', 'Korean, English, Japanese (interface + subtitles; more languages planned)', 'Cozy / Survival / Deep Freeze (3 tiers) + Endless / Wallpaper Mode', ''],
-        steamNote: '(page goes live for Steam Next Fest in October 2026)'
+        values: ['Nine Winters', 'KKIRRI Studio (solo developer)', 'Cozy Post-Apocalyptic Life Sim', 'Windows (Steam)', '$11.99', 'December 2026', 'Steam Next Fest, October 2026', '', 'Korean, English, Japanese (interface + subtitles; more languages planned)', 'Cozy / Survival / Deep Freeze (3 tiers) + Endless / Wallpaper Mode', '']
       },
       description: {
         lead: 'Build a life in a ruined city and see nine winters through. A cozy post-apocalyptic life sim.',
@@ -157,16 +153,14 @@
       language: { button: '言語 · 日本語', title: '言語を選択', help: 'プレスキット全体で使用する言語を選んでください。', close: '閉じる' },
       header: {
         tagline: '崩壊した都市で暮らしを整え、九度の冬を越すコージー・ポストアポカリプス生活シミュレーション。',
-        steamApp: 'Steamで開く', steam: 'Steamページ', assets: 'プレス素材',
-        note: 'Steamページは2026年10月のSteam Next Festに合わせて公開予定です。'
+        steamApp: 'Steamで開く', steam: 'Steamページ', assets: 'プレス素材'
       },
       sections: { description: 'ゲーム紹介', features: '特徴', trailer: 'トレーラー', screenshots: 'スクリーンショット', gifs: 'GIF', brand: 'ロゴ・ブランド素材', facts: '基本情報', history: '開発について', faq: 'FAQ', contact: 'お問い合わせ' },
       nav: ['ゲーム紹介', '特徴', 'トレーラー', 'スクリーンショット', 'GIF', 'ロゴ・ブランド素材', '基本情報', '開発について', 'FAQ', 'お問い合わせ'],
       facts: {
         heading: '基本情報', contents: '目次',
         labels: ['タイトル', '開発', 'ジャンル', 'プラットフォーム', '価格', '発売予定', '体験版', 'Steamページ', '対応言語', '難易度', 'プレス窓口'],
-        values: ['Nine Winters', 'KKIRRI Studio（個人開発）', 'コージー・ポストアポカリプス生活シミュレーション', 'Windows（Steam）', '$11.99', '2026年12月', 'Steam Next Fest（2026年10月）', '', '韓国語・英語・日本語（インターフェース＋字幕、対応言語は今後追加予定）', 'コージー / サバイバル / 極寒（3段階）＋エンドレス / 壁紙モード', ''],
-        steamNote: '（2026年10月のSteam Next Festで公開予定）'
+        values: ['Nine Winters', 'KKIRRI Studio（個人開発）', 'コージー・ポストアポカリプス生活シミュレーション', 'Windows（Steam）', '$11.99', '2026年12月', 'Steam Next Fest（2026年10月）', '', '韓国語・英語・日本語（インターフェース＋字幕、対応言語は今後追加予定）', 'コージー / サバイバル / 極寒（3段階）＋エンドレス / 壁紙モード', '']
       },
       description: {
         lead: '崩壊した都市に自分の居場所を作り、九度の冬を越えていくコージー・ポストアポカリプス生活シミュレーションです。',
@@ -243,7 +237,7 @@
       td.textContent = facts.values[index] || '';
     });
     if (rows[7]) {
-      $('td', rows[7]).innerHTML = `<a href="${STEAM_URL}" target="_blank" rel="noopener">${STEAM_LABEL}</a> ${facts.steamNote}`;
+      $('td', rows[7]).innerHTML = `<a href="${STEAM_URL}" target="_blank" rel="noopener">${STEAM_LABEL}</a>`;
     }
     if (rows[10]) {
       $('td', rows[10]).innerHTML = `<a href="mailto:${EMAIL}">${EMAIL}</a>`;
@@ -289,7 +283,6 @@
     setText('#ctaSteamApp', copy.header.steamApp);
     setText('#ctaSteamWeb', copy.header.steam);
     setText('#ctaAssets', copy.header.assets);
-    setText('.cta-note', copy.header.note);
 
     setAsideFacts(copy.facts);
     setText('nav.card h2', copy.facts.contents);
@@ -367,7 +360,7 @@
     }
     if (contactRows[2]) {
       setText('th', copy.facts.labels[7], contactRows[2]);
-      $('td', contactRows[2]).innerHTML = `<a href="${STEAM_URL}" target="_blank" rel="noopener">${STEAM_LABEL}</a> ${copy.facts.steamNote}`;
+      $('td', contactRows[2]).innerHTML = `<a href="${STEAM_URL}" target="_blank" rel="noopener">${STEAM_LABEL}</a>`;
     }
     setText('#contact .dl-note', copy.contact.note);
     setText('footer', copy.footer);
