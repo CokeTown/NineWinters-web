@@ -1,0 +1,520 @@
+<!doctype html>
+<html lang="ko">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Nine Winters — Press Kit</title>
+<meta name="description" content="무너진 도시에서 살림을 꾸리고 아홉 번의 겨울을 보내는 코지 포스트아포칼립스 생활 시뮬레이션. KKIRRI Studio 보도자료 키트.">
+<link rel="icon" href="assets/brand/library_logo_1280x720.png">
+<meta property="og:title" content="Nine Winters — Press Kit">
+<meta property="og:description" content="무너진 도시에서 살림을 꾸리고 아홉 번의 겨울을 보내는 코지 포스트아포칼립스 생활 시뮬레이션.">
+<meta property="og:image" content="assets/brand/main_capsule_1232x706.png">
+<meta property="og:type" content="website">
+<style>
+  :root {
+    --bg:#050807; --panel:#071009; --ink:#37ff73; --ink-dim:#557f68;
+    --text:#cfe3d8; --white:#eafff2; --line:rgba(55,255,115,.25); --line-soft:rgba(55,255,115,.12);
+  }
+  * { margin:0; padding:0; box-sizing:border-box; }
+  html { scroll-behavior:smooth; }
+  body { background:var(--bg); color:var(--text);
+    font-family:"Cascadia Mono","Consolas","D2Coding","Malgun Gothic",monospace;
+    line-height:1.75; font-size:15px; word-break:keep-all; -webkit-font-smoothing:antialiased; }
+  a { color:var(--ink); text-decoration:none; border-bottom:1px solid var(--line); }
+  a:hover { color:var(--white); border-color:var(--white); }
+  img { max-width:100%; height:auto; display:block; }
+
+  header {
+    border-bottom:1px solid var(--line); padding:64px 24px 46px; text-align:center;
+    background:
+      repeating-linear-gradient(0deg, rgba(55,255,115,.035) 0 1px, transparent 1px 3px),
+      radial-gradient(120% 100% at 50% 0%, #0a1a0f 0%, var(--bg) 70%);
+  }
+  .wordmark { font-size:44px; letter-spacing:14px; color:var(--white); text-shadow:0 0 18px rgba(55,255,115,.35); font-weight:bold; }
+  .tagline { margin-top:14px; color:var(--ink-dim); max-width:640px; margin-left:auto; margin-right:auto; }
+  .cta { margin-top:26px; display:flex; gap:12px; justify-content:center; flex-wrap:wrap; }
+  .btn { display:inline-block; padding:10px 22px; border:1px solid var(--line); border-radius:3px; color:var(--white); letter-spacing:2px; background:rgba(55,255,115,.06); }
+  .btn.primary { background:rgba(55,255,115,.16); box-shadow:0 0 14px rgba(55,255,115,.2); }
+  .cta-note { margin-top:12px; font-size:11px; letter-spacing:1px; color:var(--ink-dim); }
+
+  .language-trigger { position:absolute; top:18px; right:24px; border:1px solid var(--line); border-radius:3px;
+    padding:8px 12px; background:rgba(5,8,7,.88); color:var(--white); font:inherit; font-size:12px;
+    letter-spacing:1px; cursor:pointer; z-index:5; }
+  .language-trigger:hover, .language-trigger:focus-visible { border-color:var(--ink); color:var(--ink); outline:none; }
+  .language-backdrop { position:fixed; inset:0; z-index:1000; display:flex; align-items:flex-start; justify-content:center;
+    padding:24px; background:rgba(0,0,0,.74); backdrop-filter:blur(4px); }
+  .language-backdrop[hidden] { display:none; }
+  .language-modal { width:min(520px,100%); border:1px solid var(--ink); border-radius:4px; padding:20px;
+    background:#071009; box-shadow:0 18px 60px rgba(0,0,0,.7),0 0 24px rgba(55,255,115,.16); text-align:left; }
+  .language-modal-head { display:flex; align-items:center; justify-content:space-between; gap:16px;
+    padding-bottom:12px; border-bottom:1px solid var(--line-soft); }
+  .language-modal-head h2 { margin:0; border:0; padding:0; font-size:14px; letter-spacing:3px; }
+  .language-close { width:34px; height:34px; border:1px solid var(--line); border-radius:3px; background:transparent;
+    color:var(--white); font:inherit; font-size:18px; cursor:pointer; }
+  .language-help { margin:14px 0; color:var(--ink-dim); font-size:12px; }
+  .language-options { display:grid; grid-template-columns:repeat(3,1fr); gap:8px; }
+  .language-option { min-height:68px; border:1px solid var(--line-soft); border-radius:3px; background:rgba(55,255,115,.03);
+    color:var(--text); font:inherit; cursor:pointer; padding:10px; text-align:left; }
+  .language-option span { display:block; color:var(--white); font-size:14px; margin-bottom:3px; }
+  .language-option small { color:var(--ink-dim); font-size:10px; letter-spacing:1px; }
+  .language-option:hover, .language-option:focus-visible, .language-option[aria-pressed="true"] {
+    border-color:var(--ink); background:rgba(55,255,115,.12); outline:none; }
+
+  .wrap { display:flex; gap:44px; max-width:1080px; margin:0 auto; padding:48px 24px 90px; align-items:flex-start; }
+  aside { width:270px; flex:0 0 270px; position:sticky; top:24px; }
+  .card { border:1px solid var(--line); border-radius:4px; padding:18px 20px; background:var(--panel); }
+  .card + .card { margin-top:16px; }
+  aside h2 { font-size:13px; letter-spacing:3px; color:var(--white); border-bottom:1px solid var(--line-soft); padding-bottom:8px; margin-bottom:12px; }
+  aside dl { font-size:13px; }
+  aside dt { color:var(--ink-dim); margin-top:10px; letter-spacing:1px; }
+  aside dd { color:var(--text); }
+  nav ul { list-style:none; font-size:13px; }
+  nav li { padding:4px 0; }
+  nav a { border-bottom:none; letter-spacing:2px; color:var(--ink-dim); }
+  nav a::before { content:'> '; color:var(--line); }
+  nav a:hover { color:var(--white); }
+
+  main { flex:1; min-width:0; }
+  main section { margin-bottom:52px; scroll-margin-top:24px; }
+  main h2 { font-size:16px; letter-spacing:4px; color:var(--white); margin-bottom:18px; padding-bottom:8px; border-bottom:1px solid var(--line-soft); }
+  main h3 { font-size:12px; letter-spacing:3px; color:var(--ink-dim); margin:26px 0 10px; font-weight:normal; }
+  main h3:first-of-type { margin-top:0; }
+  main p { margin-bottom:14px; }
+  main b, main strong { color:var(--white); font-weight:bold; }
+  p.lead { color:var(--white); font-size:16px; line-height:1.85; }
+
+  ul.features { list-style:none; }
+  ul.features li { padding:10px 0 10px 22px; position:relative; border-bottom:1px dashed var(--line-soft); }
+  ul.features li::before { content:''; position:absolute; left:2px; top:19px; width:8px; height:8px; background:var(--ink); box-shadow:0 0 6px rgba(55,255,115,.7); }
+  ul.features li b { display:block; margin-bottom:2px; }
+
+  .qa + .qa { margin-top:18px; padding-top:18px; border-top:1px dashed var(--line-soft); }
+  .qa p.q { color:var(--white); margin-bottom:6px; }
+  .qa p.a { margin-bottom:0; }
+
+  details.en { display:none !important; margin-top:22px; border:1px solid var(--line-soft); border-radius:3px; background:rgba(55,255,115,.02); }
+  details.en > summary { cursor:pointer; list-style:none; padding:9px 14px; font-size:12px; letter-spacing:3px; color:var(--ink-dim); }
+  details.en > summary::-webkit-details-marker { display:none; }
+  details.en > summary::before { content:'[+] '; color:var(--ink); }
+  details.en[open] > summary::before { content:'[-] '; }
+  details.en > summary:hover { color:var(--white); }
+  details.en .en-body { padding:14px 16px 16px; border-top:1px solid var(--line-soft); word-break:normal; }
+  details.en .en-body > *:last-child { margin-bottom:0; }
+  details.en .en-body h3:first-of-type { margin-top:0; }
+
+  .shots { display:grid; grid-template-columns:repeat(auto-fill, minmax(220px,1fr)); gap:10px; }
+  .shot { aspect-ratio:16/9; border:1px solid var(--line-soft); background:
+      repeating-linear-gradient(0deg, rgba(55,255,115,.03) 0 1px, transparent 1px 3px), #08120b;
+    display:flex; align-items:center; justify-content:center; color:var(--ink-dim); font-size:12px; letter-spacing:2px; }
+
+  figure.tile { border:1px solid var(--line-soft); background:#08120b; }
+  figure.tile a { display:block; border-bottom:none; }
+  figure.tile img { width:100%; aspect-ratio:16/9; object-fit:cover; background:#08120b; }
+  figure.tile figcaption { font-size:11px; letter-spacing:1px; color:var(--ink-dim);
+    padding:7px 9px; border-top:1px solid var(--line-soft); display:flex; justify-content:space-between; gap:8px; }
+  figure.tile figcaption span.n { color:var(--ink); }
+  figure.tile:hover { border-color:var(--line); }
+  figure.tile:hover figcaption { color:var(--text); }
+
+  .brand-grid { display:grid; grid-template-columns:repeat(auto-fill, minmax(240px,1fr)); gap:12px; }
+  .brand-tile { border:1px solid var(--line-soft); background:
+      linear-gradient(45deg, #0b140e 25%, transparent 25%, transparent 75%, #0b140e 75%) 0 0/16px 16px,
+      linear-gradient(45deg, #0b140e 25%, #08120b 25%, #08120b 75%, #0b140e 75%) 8px 8px/16px 16px;
+    padding:16px; display:flex; flex-direction:column; gap:10px; }
+  .brand-tile .frame { flex:1; display:flex; align-items:center; justify-content:center; min-height:110px; }
+  .brand-tile img { max-height:150px; width:auto; object-fit:contain; }
+  .brand-tile .meta { font-size:11px; letter-spacing:1px; color:var(--ink-dim); border-top:1px solid var(--line-soft); padding-top:8px; }
+  .brand-tile .meta b { color:var(--white); display:block; font-weight:normal; letter-spacing:2px; }
+
+  table.facts { width:100%; border-collapse:collapse; font-size:13px; }
+  table.facts th, table.facts td { text-align:left; padding:8px 10px; border-bottom:1px solid var(--line-soft); vertical-align:top; }
+  table.facts th { color:var(--ink-dim); font-weight:normal; letter-spacing:2px; white-space:nowrap; width:170px; }
+  .scroll-x { overflow-x:auto; }
+
+  .dl-note { font-size:12px; color:var(--ink-dim); margin-top:10px; }
+  footer { border-top:1px solid var(--line); padding:30px 24px 60px; text-align:center; color:var(--ink-dim); font-size:12px; letter-spacing:1px; }
+  @media (max-width: 760px) {
+    .wrap { flex-direction:column; gap:28px; }
+    aside { position:static; width:100%; flex:none; }
+    .wordmark { font-size:30px; letter-spacing:8px; }
+    table.facts th { width:auto; }
+    header { padding-top:78px; }
+    .language-trigger { top:12px; right:12px; }
+    .language-backdrop { padding:12px; }
+    .language-options { grid-template-columns:1fr; }
+  }
+</style>
+
+<header>
+  <button class="language-trigger" id="languageOpen" type="button" aria-haspopup="dialog" aria-controls="languageModal">LANGUAGE · ENGLISH</button>
+  <div class="wordmark">NINE WINTERS</div>
+  <div class="tagline">무너진 도시에서 살림을 꾸리고 아홉 번의 겨울을 보내는 코지 포스트아포칼립스 생활 시뮬레이션.</div>
+  <div class="cta">
+    <a class="btn primary" href="https://store.steampowered.com/app/4950160/Nine_Winters/" target="_blank" rel="noopener">Steam 페이지</a>
+    <a class="btn" href="#screenshots">보도 자산</a>
+  </div>
+  <div class="cta-note">Steam 페이지는 2026년 10월 Steam Next Fest에 맞춰 공개됩니다.</div>
+</header>
+
+<div class="language-backdrop" id="languageModal" hidden>
+  <div class="language-modal" role="dialog" aria-modal="true" aria-labelledby="languageTitle" aria-describedby="languageHelp">
+    <div class="language-modal-head">
+      <h2 id="languageTitle">LANGUAGE</h2>
+      <button class="language-close" id="languageClose" type="button" aria-label="Close">×</button>
+    </div>
+    <p class="language-help" id="languageHelp">Choose the language used throughout this press kit.</p>
+    <div class="language-options">
+      <button class="language-option" type="button" data-language="en"><span>English</span><small>EN</small></button>
+      <button class="language-option" type="button" data-language="ja"><span>日本語</span><small>JA</small></button>
+      <button class="language-option" type="button" data-language="ko"><span>한국어</span><small>KO</small></button>
+    </div>
+  </div>
+</div>
+
+<div class="wrap">
+  <aside>
+    <div class="card">
+      <h2>FACTSHEET</h2>
+      <dl>
+        <dt>게임명</dt><dd>Nine Winters</dd>
+        <dt>개발</dt><dd>KKIRRI Studio (1인 개발)</dd>
+        <dt>장르</dt><dd>코지 포스트아포칼립스 생활 시뮬</dd>
+        <dt>플랫폼</dt><dd>Windows (Steam)</dd>
+        <dt>가격</dt><dd>$11.99</dd>
+        <dt>출시</dt><dd>2026년 12월</dd>
+        <dt>데모</dt><dd>2026년 10월 Steam Next Fest</dd>
+        <dt>지원 언어</dt><dd>한국어 · English · 日本語 (추가 언어 예정)</dd>
+        <dt>난이도</dt><dd>코지 / 생존 / 혹한 + 무한 / 배경화면 모드</dd>
+        <dt>보도 연락처</dt><dd><a href="mailto:ninewinters1212@gmail.com">ninewinters1212@gmail.com</a></dd>
+      </dl>
+    </div>
+    <nav class="card">
+      <h2>CONTENTS</h2>
+      <ul>
+        <li><a href="#description">소개</a></li>
+        <li><a href="#features">특징</a></li>
+        <li><a href="#trailer">트레일러</a></li>
+        <li><a href="#screenshots">스크린샷</a></li>
+        <li><a href="#gifs">GIF</a></li>
+        <li><a href="#brand">로고 · 브랜딩</a></li>
+        <li><a href="#facts">팩트시트</a></li>
+        <li><a href="#history">개발 이야기</a></li>
+        <li><a href="#faq">FAQ</a></li>
+        <li><a href="#contact">연락처</a></li>
+      </ul>
+    </nav>
+  </aside>
+
+  <main>
+    <section id="description">
+      <h2>소개</h2>
+      <p class="lead">무너진 도시에서 살림을 꾸리고 아홉 번의 겨울을 보내는 코지 포스트아포칼립스 생활 시뮬레이션입니다.</p>
+      <p>19곳의 폐허를 돌아다니며 쓸 만한 물자를 챙겨 오고 16곳의 거처 중 마음에 드는 곳을 골라 나만의 집으로 만드세요. 겨울이 깊어질수록 새 길이 열리고 도시가 망한 이유도 드러납니다. 아홉 번째 겨울 끝에는 앞으로 살아갈 곳을 정해야 합니다.</p>
+    </section>
+
+    <section id="features">
+      <h2>특징</h2>
+      <ul class="features">
+        <li><b>1. 끝이 있는 코지</b>이야기는 아홉 번의 겨울 동안 이어집니다. 해마다 추위와 도시의 모습이 달라지고 아홉 번째 겨울에 내린 선택에 따라 결말이 바뀝니다.</li>
+        <li><b>2. 16곳의 거처</b>옥탑, 벙커, 버스, 지하철 승강장, 등대와 선박도 집이 됩니다. 마음에 드는 거처를 골라 금 간 곳을 막고 난방과 가구를 들이세요. 차갑고 텅 빈 공간이 조금씩 집처럼 변합니다.</li>
+        <li><b>3. 살아 있는 날씨</b>36곡의 음악이 날씨와 계절, 시간을 따라 흐릅니다. 비가 오면 벽이 젖고 겨울이 오면 창에 서리가 낍니다. 사계절이 돌 때마다 거처 안팎의 풍경이 바뀝니다.</li>
+        <li><b>4. 돌아오면 살림 돌보기</b>끼니와 차를 준비하고 작물을 돌보세요. 천을 꿰매 이불을 만들고 망가진 물건도 손봅니다. 길고양이가 찾아오면 먹이를 주고 함께 지낼 수 있습니다.</li>
+        <li><b>5. 라디오에 남은 도시의 기록</b>주파수를 맞추면 방송과 끊긴 교신, 오래된 녹음이 들려옵니다. 더 먼 곳까지 나갈수록 도시가 왜 망했는지 조금씩 알게 됩니다.</li>
+        <li><b>6. 19곳을 직접 탐험하기</b>위험과 필요한 도구를 살핀 뒤 폐허로 직접 나서세요. 눈이 길을 막으면 물자와 기력을 써 길을 내거나 먼 길을 돌아가야 합니다.</li>
+        <li><b>7. 내 속도로 보내는 겨울</b>코지, 생존, 혹한 가운데 원하는 난이도를 고르세요. 선택에 따라 추위와 자원 압박이 달라집니다. 무한 모드에서는 살림을 계속 이어 가고 배경화면 모드에서는 자원 걱정 없이 거처를 꾸밉니다.</li>
+        <li><b>8. 바탕화면에 켜 두기</b>자동 진행을 켜 두고 하루가 흐르는 모습을 지켜보세요. 완성한 거처를 데스크톱 위젯으로 띄워 둘 수도 있습니다.</li>
+      </ul>
+
+      <details class="en">
+        <summary>ENGLISH</summary>
+        <div class="en-body">
+          <ul class="features">
+            <li><b>1. A Cozy Game with an Ending</b>The story runs through nine winters. Each year changes the cold and the city, and your choice in the ninth winter determines the ending.</li>
+            <li><b>2. Sixteen Shelters</b>Choose from a rooftop room, a bunker, a bus, a subway platform, a lighthouse, a ship, and more. Patch the cracks, restore the heat, and furnish an empty space until it feels like home.</li>
+            <li><b>3. Living Weather</b>Thirty-six tracks follow the weather, the season, and the time of day. Rain wets the walls. Winter frosts the windows. The world inside and outside the shelter shifts with every turn of the seasons.</li>
+            <li><b>4. Tend to Things at Home</b>Make meals and tea, tend crops, sew a quilt, and repair worn-out belongings. If a stray cat finds your door, feed it and let it stay.</li>
+            <li><b>5. Records Left on the Radio</b>Tune in to broadcasts, broken calls, and old recordings. The farther you travel, the more you learn about why the city fell.</li>
+            <li><b>6. Explore Nineteen Areas</b>Weigh the risk, choose your tools, and make each trip yourself. When snow blocks a road, spend supplies and Energy to clear it or take the long way around.</li>
+            <li><b>7. Play at Your Own Pace</b>Cozy, Survival, and Deep Freeze adjust the pressure from cold and scarce supplies. Endless Mode keeps the household going, while Wallpaper Mode removes resource worries.</li>
+            <li><b>8. Keep It on Your Desktop</b>Turn on Auto Progress and watch the days pass, or keep a finished shelter on your desktop as a widget.</li>
+          </ul>
+        </div>
+      </details>
+    </section>
+
+    <section id="trailer">
+      <h2>트레일러</h2>
+      <div class="shot" style="aspect-ratio:16/9; max-width:640px">TRAILER EMBED</div>
+      <div class="dl-note">트레일러 공개 URL이 확정되면 이 자리에 연결합니다.</div>
+    </section>
+
+    <section id="screenshots">
+      <h2>스크린샷</h2>
+      <div class="shots">
+        <figure class="tile">
+          <a href="assets/screenshots/01_home-container.png" target="_blank" rel="noopener">
+            <img src="assets/screenshots/01_home-container.png" width="1920" height="1080" loading="lazy" decoding="async" alt="컨테이너 셸터와 게임 HUD.">
+          </a>
+          <figcaption><span>컨테이너 셸터</span><span class="n">01</span></figcaption>
+        </figure>
+        <figure class="tile">
+          <a href="assets/screenshots/02_home-lodge.png" target="_blank" rel="noopener">
+            <img src="assets/screenshots/02_home-lodge.png" width="1920" height="1080" loading="lazy" decoding="async" alt="설원 로지 셸터와 게임 HUD.">
+          </a>
+          <figcaption><span>설원 로지</span><span class="n">02</span></figcaption>
+        </figure>
+        <figure class="tile">
+          <a href="assets/screenshots/03_home-penthouse.png" target="_blank" rel="noopener">
+            <img src="assets/screenshots/03_home-penthouse.png" width="1920" height="1080" loading="lazy" decoding="async" alt="펜트하우스 셸터와 게임 HUD.">
+          </a>
+          <figcaption><span>펜트하우스</span><span class="n">03</span></figcaption>
+        </figure>
+        <figure class="tile">
+          <a href="assets/screenshots/04_home-greenhouse.png" target="_blank" rel="noopener">
+            <img src="assets/screenshots/04_home-greenhouse.png" width="1920" height="1080" loading="lazy" decoding="async" alt="온실 셸터와 게임 HUD.">
+          </a>
+          <figcaption><span>온실 셸터</span><span class="n">04</span></figcaption>
+        </figure>
+        <figure class="tile">
+          <a href="assets/screenshots/05_settings-graphics.png" target="_blank" rel="noopener">
+            <img src="assets/screenshots/05_settings-graphics.png" width="1920" height="1080" loading="lazy" decoding="async" alt="디스플레이 항목이 맨 위에 표시된 그래픽 설정 화면.">
+          </a>
+          <figcaption><span>그래픽 설정</span><span class="n">05</span></figcaption>
+        </figure>
+        <figure class="tile">
+          <a href="assets/screenshots/06_craft-pda.png" target="_blank" rel="noopener">
+            <img src="assets/screenshots/06_craft-pda.png" width="1920" height="1080" loading="lazy" decoding="async" alt="휴대 단말에 열린 제작 화면.">
+          </a>
+          <figcaption><span>제작 PDA</span><span class="n">06</span></figcaption>
+        </figure>
+        <figure class="tile">
+          <a href="assets/screenshots/07_stage-fishmarket.png" target="_blank" rel="noopener">
+            <img src="assets/screenshots/07_stage-fishmarket.png" width="1920" height="1080" loading="lazy" decoding="async" alt="겨울 어시장을 수색하는 탐험 무대.">
+          </a>
+          <figcaption><span>탐험 — 어시장</span><span class="n">07</span></figcaption>
+        </figure>
+        <figure class="tile">
+          <a href="assets/screenshots/08_map.png" target="_blank" rel="noopener">
+            <img src="assets/screenshots/08_map.png" width="1920" height="1080" loading="lazy" decoding="async" alt="관측 단말에 표시된 얼어붙은 도시 지도.">
+          </a>
+          <figcaption><span>도시 관측 지도</span><span class="n">08</span></figcaption>
+        </figure>
+      </div>
+      <div class="dl-note">1920×1080 PNG · 이미지를 누르면 원본이 열립니다. 기사·영상에 별도 허가 없이 쓰셔도 됩니다.</div>
+    </section>
+
+    <section id="gifs">
+      <h2>GIF</h2>
+      <div class="shots">
+        <figure class="tile">
+          <a href="assets/gifs/01-east-sunset-gate.gif" target="_blank" rel="noopener">
+            <img src="assets/gifs/01-east-sunset-gate.gif" width="1280" height="720" loading="lazy" decoding="async" alt="해 질 녘 동부 구역 전경.">
+          </a>
+          <figcaption><span>동부 전경, 노을</span><span class="n">01</span></figcaption>
+        </figure>
+        <figure class="tile">
+          <a href="assets/gifs/02-bridgehouse-24h.gif" target="_blank" rel="noopener">
+            <img src="assets/gifs/02-bridgehouse-24h.gif" width="1280" height="720" loading="lazy" decoding="async" alt="다리 위 집에 하루가 통째로 흐르는 장면.">
+          </a>
+          <figcaption><span>24시간 타임랩스</span><span class="n">02</span></figcaption>
+        </figure>
+        <figure class="tile">
+          <a href="assets/gifs/03-rooftop-rain.gif" target="_blank" rel="noopener">
+            <img src="assets/gifs/03-rooftop-rain.gif" width="1280" height="720" loading="lazy" decoding="async" alt="옥탑 셸터에 비가 고이는 장면.">
+          </a>
+          <figcaption><span>옥탑에 내리는 비</span><span class="n">03</span></figcaption>
+        </figure>
+        <figure class="tile">
+          <a href="assets/gifs/04-lodge-blizzard.gif" target="_blank" rel="noopener">
+            <img src="assets/gifs/04-lodge-blizzard.gif" width="1280" height="720" loading="lazy" decoding="async" alt="스키 로지를 지나가는 눈보라.">
+          </a>
+          <figcaption><span>로지의 눈보라</span><span class="n">04</span></figcaption>
+        </figure>
+        <figure class="tile">
+          <a href="assets/gifs/05-lighthouse-night.gif" target="_blank" rel="noopener">
+            <img src="assets/gifs/05-lighthouse-night.gif" width="1280" height="720" loading="lazy" decoding="async" alt="밤에 돌아가는 등대 불빛.">
+          </a>
+          <figcaption><span>등대의 밤</span><span class="n">05</span></figcaption>
+        </figure>
+        <figure class="tile">
+          <a href="assets/gifs/06-cat-hearth-sleep.gif" target="_blank" rel="noopener">
+            <img src="assets/gifs/06-cat-hearth-sleep.gif" width="1280" height="720" loading="lazy" decoding="async" alt="불 켜진 난로 앞에서 잠든 고양이.">
+          </a>
+          <figcaption><span>난로 곁의 고양이</span><span class="n">06</span></figcaption>
+        </figure>
+        <figure class="tile">
+          <a href="assets/gifs/07-cat-pet-bowl-life.gif" target="_blank" rel="noopener">
+            <img src="assets/gifs/07-cat-pet-bowl-life.gif" width="1280" height="720" loading="lazy" decoding="async" alt="밥그릇 옆에서 고양이를 쓰다듬는 장면.">
+          </a>
+          <figcaption><span>쓰다듬기와 밥그릇</span><span class="n">07</span></figcaption>
+        </figure>
+        <figure class="tile">
+          <a href="assets/gifs/08-water-seasons.gif" target="_blank" rel="noopener">
+            <img src="assets/gifs/08-water-seasons.gif" width="1280" height="720" loading="lazy" decoding="async" alt="계절과 날씨에 따라 수위가 차오르는 항만.">
+          </a>
+          <figcaption><span>계절에 따른 수위 변화</span><span class="n">08</span></figcaption>
+        </figure>
+      </div>
+      <div class="dl-note">1280×720 · 15fps · 6초 반복 · 실제 게임 렌더러에서 캡처했습니다. 누르면 원본이 열립니다.</div>
+    </section>
+
+    <section id="brand">
+      <h2>로고 · 브랜딩</h2>
+      <div class="brand-grid">
+        <div class="brand-tile">
+          <div class="frame"><img src="assets/brand/wordmark_transparent_1280x720.png" loading="lazy" decoding="async" alt="배경이 비치는 Nine Winters 워드마크."></div>
+          <div class="meta"><b>워드마크</b><a href="assets/brand/wordmark_transparent_1280x720.png" target="_blank" rel="noopener">PNG 1280×720 · 배경 투명</a></div>
+        </div>
+        <div class="brand-tile">
+          <div class="frame"><img src="assets/brand/library_logo_1280x720.png" loading="lazy" decoding="async" alt="배경이 비치는 Nine Winters 로고."></div>
+          <div class="meta"><b>로고</b><a href="assets/brand/library_logo_1280x720.png" target="_blank" rel="noopener">PNG 1280×720 · 배경 투명</a></div>
+        </div>
+        <div class="brand-tile">
+          <div class="frame"><img src="assets/brand/logo_no_background.png" loading="lazy" decoding="async" alt="배경이 비치는 Nine Winters 엠블럼."></div>
+          <div class="meta"><b>엠블럼</b><a href="assets/brand/logo_no_background.png" target="_blank" rel="noopener">PNG · 배경 투명</a></div>
+        </div>
+        <div class="brand-tile">
+          <div class="frame"><img src="assets/brand/main_capsule_1232x706.png" loading="lazy" decoding="async" alt="Nine Winters 메인 캡슐 이미지."></div>
+          <div class="meta"><b>메인 캡슐</b><a href="assets/brand/main_capsule_1232x706.png" target="_blank" rel="noopener">PNG 1232×706</a></div>
+        </div>
+        <div class="brand-tile">
+          <div class="frame"><img src="assets/brand/header_capsule_920x430.png" loading="lazy" decoding="async" alt="Nine Winters 헤더 캡슐 이미지."></div>
+          <div class="meta"><b>헤더 캡슐</b><a href="assets/brand/header_capsule_920x430.png" target="_blank" rel="noopener">PNG 920×430</a></div>
+        </div>
+        <div class="brand-tile">
+          <div class="frame"><img src="assets/brand/library_capsule_600x900.png" loading="lazy" decoding="async" alt="Nine Winters 세로형 라이브러리 캡슐 이미지."></div>
+          <div class="meta"><b>라이브러리 캡슐</b><a href="assets/brand/library_capsule_600x900.png" target="_blank" rel="noopener">PNG 600×900</a></div>
+        </div>
+      </div>
+      <div class="dl-note">워드마크와 로고는 어두운 배경 위에 놓아 주시고 색상이나 비율은 바꾸지 말아 주세요.</div>
+    </section>
+
+    <section id="facts">
+      <h2>팩트시트</h2>
+      <div class="scroll-x">
+        <table class="facts">
+          <tr><th>게임명</th><td>Nine Winters</td></tr>
+          <tr><th>개발</th><td>KKIRRI Studio (1인 개발)</td></tr>
+          <tr><th>장르</th><td>코지 포스트아포칼립스 생활 시뮬</td></tr>
+          <tr><th>플랫폼</th><td>Windows (Steam)</td></tr>
+          <tr><th>가격</th><td>$11.99</td></tr>
+          <tr><th>출시</th><td>2026년 12월</td></tr>
+          <tr><th>데모</th><td>2026년 10월 Steam Next Fest</td></tr>
+          <tr><th>Steam 페이지</th><td><a href="https://store.steampowered.com/app/4950160/Nine_Winters/" target="_blank" rel="noopener">store.steampowered.com/app/4950160</a> (2026년 10월 Steam Next Fest 공개 예정)</td></tr>
+          <tr><th>지원 언어</th><td>한국어, English, 日本語 (인터페이스 + 자막, 추가 언어 지원 예정)</td></tr>
+          <tr><th>난이도</th><td>코지 / 생존 / 혹한 (3단계) + 무한 / 배경화면 모드</td></tr>
+          <tr><th>보도 연락처</th><td><a href="mailto:ninewinters1212@gmail.com">ninewinters1212@gmail.com</a></td></tr>
+        </table>
+      </div>
+
+      <details class="en">
+        <summary>ENGLISH</summary>
+        <div class="en-body">
+          <div class="scroll-x">
+            <table class="facts">
+              <tr><th>Title</th><td>Nine Winters</td></tr>
+              <tr><th>Developer</th><td>KKIRRI Studio (solo developer)</td></tr>
+              <tr><th>Genre</th><td>Cozy Post-Apocalyptic Life Sim</td></tr>
+              <tr><th>Platform</th><td>Windows (Steam)</td></tr>
+              <tr><th>Price</th><td>$11.99</td></tr>
+              <tr><th>Release</th><td>December 2026</td></tr>
+              <tr><th>Demo</th><td>Steam Next Fest, October 2026</td></tr>
+              <tr><th>Steam Page</th><td><a href="https://store.steampowered.com/app/4950160/Nine_Winters/" target="_blank" rel="noopener">store.steampowered.com/app/4950160</a> (page goes live at Steam Next Fest, October 2026)</td></tr>
+              <tr><th>Languages</th><td>Korean, English, Japanese (interface + subtitles; more languages planned)</td></tr>
+              <tr><th>Difficulty</th><td>Cozy / Survival / Deep Freeze (3 tiers) + Endless / Wallpaper Mode</td></tr>
+              <tr><th>Press Contact</th><td><a href="mailto:ninewinters1212@gmail.com">ninewinters1212@gmail.com</a></td></tr>
+            </table>
+          </div>
+        </div>
+      </details>
+    </section>
+
+    <section id="history">
+      <h2>개발 이야기</h2>
+      <p>Nine Winters는 KKIRRI Studio가 만드는 1인 개발 게임이다. 게임의 기획과 방향, 최종 검수는 개발자가 직접 맡는다. AI는 일부 모델링 작업을 보조하고 코딩, 기계 번역, 노래 제작에 활용한다.</p>
+      <p>모든 장면은 실제 게임에서 3D 복셀로 렌더링한다. 스크린샷과 트레일러도 모두 실제 게임 화면이다.</p>
+      <p>현재 내부 빌드에는 요리와 재배, 청소, 재봉, 사진, 고양이 돌보기 같은 생활과 아홉 번의 겨울을 잇는 기본 진행이 들어가 있다. 출시 전까지는 겨울 탐험의 세부 동선과 후반부 이야기, 영어·일본어 번역, 장기 밸런스 검증과 배포 준비를 다듬는다. 최신 생활 콘텐츠는 본편에서 먼저 검증한 뒤 데모에 옮길 예정이다.</p>
+
+      <details class="en">
+        <summary>ENGLISH</summary>
+        <div class="en-body">
+          <p>Nine Winters is a solo-developed game by KKIRRI Studio. The developer is responsible for the game's design, direction, and final review. AI is used in a limited supporting role for some modeling work, coding, machine translation, and song production.</p>
+          <p>Every scene is rendered in the game with 3D voxels. Screenshots and trailer footage all come from the game itself.</p>
+        </div>
+      </details>
+    </section>
+
+    <section id="faq">
+      <h2>FAQ</h2>
+      <div class="qa">
+        <p class="q">Q. 데모에서는 어디까지 해볼 수 있나요?</p>
+        <p class="a">데모에서는 셸터 하나에 불을 지피고 첫눈과 첫 한파를 맞는 보름(15일)을 보냅니다. 수프를 데우고 벽을 고치고 고양이를 곁에 두는 Nine Winters의 하루가 이 안에 담겨 있습니다. Day 15, 겨울을 살짝 맛본 순간 화면이 잠시 멈춥니다. 여덟 번의 겨울이 남아 있습니다.</p>
+      </div>
+      <div class="qa">
+        <p class="q">Q. 출시 시기는 언제인가요?</p>
+        <p class="a">2026년 12월 출시 예정입니다. 정확한 날짜는 추후 공개합니다. 2026년 10월 Steam Next Fest에서 데모를 먼저 선보입니다.</p>
+      </div>
+      <div class="qa">
+        <p class="q">Q. 어떤 플랫폼에서 플레이할 수 있나요?</p>
+        <p class="a">Steam(Windows)으로 출시합니다.</p>
+      </div>
+      <div class="qa">
+        <p class="q">Q. DLC나 업데이트 계획이 있나요?</p>
+        <p class="a">DLC를 준비 중이며 계절에 맞춘 무료 업데이트도 이어갈 계획입니다.</p>
+      </div>
+      <div class="qa">
+        <p class="q">Q. AI를 사용한 게임인가요?</p>
+        <p class="a">일부 모델링 작업의 보조와 코딩, 기계 번역, 노래 제작에 AI를 사용했습니다. 게임의 기획과 방향, 최종 검수는 개발자가 직접 맡습니다.</p>
+      </div>
+      <div class="qa">
+        <p class="q">Q. 지원 언어는 무엇인가요?</p>
+        <p class="a">출시 시점에는 한국어, 영어, 일본어를 지원합니다. 이후 다른 언어도 차례로 추가할 계획이며 인터페이스와 자막을 함께 지원합니다.</p>
+      </div>
+
+      <details class="en">
+        <summary>ENGLISH</summary>
+        <div class="en-body">
+          <div class="qa">
+            <p class="q">Q. How much of the game can I play in the demo?</p>
+            <p class="a">The demo lights one shelter and carries you through fifteen days, ending just as the first snow and the season's first cold snap arrive. The texture of a day — warming the soup, mending a wall, keeping the cat close — is all here. At Day 15, having just tasted winter, the screen holds still. Eight more winters remain.</p>
+          </div>
+          <div class="qa">
+            <p class="q">Q. When does Nine Winters release?</p>
+            <p class="a">Nine Winters is scheduled for release in December 2026. The exact date will be announced later. A playable demo will be available during Steam Next Fest in October 2026.</p>
+          </div>
+          <div class="qa">
+            <p class="q">Q. What platforms will the game be on?</p>
+            <p class="a">Nine Winters launches on Steam for Windows.</p>
+          </div>
+          <div class="qa">
+            <p class="q">Q. Are there plans for DLC or updates?</p>
+            <p class="a">DLC is in development, and free seasonal updates are also planned.</p>
+          </div>
+          <div class="qa">
+            <p class="q">Q. Is this game made with AI?</p>
+            <p class="a">AI was used in a limited supporting role for some modeling work, coding, machine translation, and song production. The developer remains responsible for the game's design, direction, and final review.</p>
+          </div>
+          <div class="qa">
+            <p class="q">Q. What languages are supported?</p>
+            <p class="a">Korean, English, and Japanese will be supported at launch, with interface and subtitles available in all three. More languages are planned after release.</p>
+          </div>
+        </div>
+      </details>
+    </section>
+
+    <section id="contact">
+      <h2>연락처</h2>
+      <div class="scroll-x">
+        <table class="facts">
+          <tr><th>보도 연락처</th><td><a href="mailto:ninewinters1212@gmail.com">ninewinters1212@gmail.com</a></td></tr>
+          <tr><th>개발</th><td>KKIRRI Studio (1인 개발)</td></tr>
+          <tr><th>Steam 페이지</th><td><a href="https://store.steampowered.com/app/4950160/Nine_Winters/" target="_blank" rel="noopener">store.steampowered.com/app/4950160</a> (2026년 10월 Steam Next Fest 공개 예정)</td></tr>
+        </table>
+      </div>
+      <p class="dl-note">이 페이지의 스크린샷과 GIF, 로고는 기사·영상·방송에 별도 허가 없이 쓰실 수 있습니다.</p>
+    </section>
+  </main>
+</div>
+
+<footer>NINE WINTERS © 2026 KKIRRI Studio · ninewinters1212@gmail.com</footer>
+<script src="i18n.js"></script>
+</html>
